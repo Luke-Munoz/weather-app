@@ -1,0 +1,39 @@
+* {
+    background-color: white;
+    text-align: auto;
+}
+
+.main {
+    background-color: teal;
+}
+
+h1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.col-6 {
+    text-align: center;
+}
+
+div1 {
+    border: solid;
+    border-color: black;
+    text-align: center;
+}
+
+.main-results {
+    border: solid;
+    border-color: black;
+    background-color: cornflowerblue;
+}
+
+button {
+    background-color: lightskyblue;
+}
+
+.main-loction {
+    border: solid;
+    border-color: black
+}
