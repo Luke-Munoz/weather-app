@@ -1,5 +1,5 @@
 // use this one first to input it into one call
-var apiGEO = "http://api.openweathermap.org/geo/1.0/direct?q=";
+var apiGEO = "https://api.openweathermap.org/geo/1.0/direct?q=";
 var apiLimit = "&limit=1";
 var apiKeyGeo = "&appid=768aa7a7e0d2b88c9f37ace597e736b1";
 
