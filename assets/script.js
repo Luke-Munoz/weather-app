@@ -11,12 +11,56 @@ var lon;
 
 document.getElementById("btn").addEventListener("click", myFuntion);
 
+
+
+// function buttonListener(event) {
+//     if (event.target.matches()) {
+//         searchResults = document.getElementById("search").value;
+//         var btn = document.createElement("button");
+//         btn.setAttribute("class", "buttonPrevious");
+
+//         btn.textContent = searchResults;
+//         var list = document.getElementById("pervious-results");
+//         list.append(btn);
+//     } else {
+//         //user clicked on a history button
+//         searchResults = list
+//     }
+// }
+
+
+
+
 function myFuntion() {
     searchResults = document.getElementById("search").value;
     var btn = document.createElement("button");
     btn.textContent = searchResults;
     var list = document.getElementById("pervious-results");
     list.append(btn);
+
+    /// try and set up an if statement to get the value of the button again.
+
+
+
+    // if () {
+    //     searchResults = document.getElementById("search").value;
+    //     var btn = document.createElement("button");
+    //     btn.textContent = searchResults;
+    //     var list = document.getElementById("pervious-results");
+    //     list.append(btn);
+    // } else {
+    //     //user clicked on a history button
+    //     searchResults = list
+    // }
+
+
+
+
+
+
+
+
+
     fetch(apiGEO + searchResults + apiLimit + apiKeyGeo)
         .then(function(userResponse) {
             return userResponse.json();
@@ -93,7 +137,14 @@ function myFuntion() {
                         divCardBody.append(ulCardText);
                         divCard.append(divCardBody);
                         cards.append(divCard);
+
+
+                        // add a clear so that it doesnt get messy
+
+
+
                     }
+
                 });
         });
 }
